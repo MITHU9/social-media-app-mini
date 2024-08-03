@@ -1,0 +1,35 @@
+.app-container {
+  display: flex;
+  font-weight: 600;
+
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    min-height: 800px;
+  }
+
+  .post-card {
+    margin: 15px 30px;
+    font-weight: 300;
+
+    span {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .cursor {
+      cursor: pointer;
+    }
+  }
+
+  .reactions {
+    margin: 15px 0 0 0;
+  }
+
+  .create-post {
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 10%;
+  }
+}
