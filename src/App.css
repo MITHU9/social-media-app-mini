@@ -11,7 +11,7 @@
   }
 
   .post-card {
-    margin: 15px 30px;
+    margin: 25px 30px;
     font-weight: 300;
 
     span {
@@ -31,5 +31,9 @@
     width: 50%;
     margin-top: 40px;
     margin-left: 10%;
+  }
+
+  .welcome-msg {
+    margin: 50px 0;
   }
 }

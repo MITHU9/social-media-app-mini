@@ -15,7 +15,7 @@ const CreatePost = () => {
       id: Date.now(),
       userId: userId.current.value,
       title: postTitle.current.value,
-      content: postContent.current.value,
+      body: postContent.current.value,
       reactions: parseInt(reactions.current.value),
       tags: tags.current.value.split(" ").map((tag) => tag.trim()),
     });

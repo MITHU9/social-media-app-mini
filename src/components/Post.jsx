@@ -15,7 +15,7 @@ const Post = ({ post }) => {
             <MdDelete />
           </span>
         </h5>
-        <p className="card-text">{post.content}</p>
+        <p className="card-text">{post.body}</p>
         {post.tags.map((tag) => (
           <span key={tag} className="badge text-bg-primary">
             {tag}
@@ -23,7 +23,7 @@ const Post = ({ post }) => {
         ))}
 
         <div className="alert alert-success reactions" role="alert">
-          This post is reacted by {post.reaction} people.
+          This post is reacted by {post.reactions.likes} people.
         </div>
       </div>
     </div>
