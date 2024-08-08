@@ -9,10 +9,10 @@ export const PostList = createContext({
 });
 
 const postListReducer = (currPostList, action) => {
-  let newPostList;
+  let newPostList = currPostList;
   if (action.type === "DELETE_POST") {
     newPostList = currPostList.filter((post) => post.id !== action.payload);
-  } else if (action.type === "ADD_INITIAl_POSTS") {
+  } else if (action.type === "ADD_INITIAL_POSTS") {
     newPostList = action.payload.posts;
   } else if (action.type === "ADD_POST") {
     newPostList = [action.payload, ...currPostList];
@@ -29,7 +29,7 @@ const PostListProvider = ({ children }) => {
   };
   const addInitialPosts = (posts) => {
     //console.log(posts);
-    dispatchPostList({ type: "ADD_INITIAl_POSTS", payload: posts });
+    dispatchPostList({ type: "ADD_INITIAL_POSTS", payload: { posts } });
   };
 
   const deletePost = (id) => {
