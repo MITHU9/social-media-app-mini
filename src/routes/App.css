@@ -27,16 +27,17 @@
     margin: 15px 0 0 0;
   }
 
-  .create-post {
-    width: 50%;
-    margin-top: 40px;
-    margin-left: 10%;
-  }
-
   .welcome-msg {
     margin: 50px 0;
   }
   .spinner {
     margin: 50px 0;
   }
+}
+
+.create-post {
+  width: 50%;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-left: 10%;
 }
